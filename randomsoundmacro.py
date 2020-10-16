@@ -9,6 +9,12 @@ KeyMacroGroupList = [
     ("ctrl", "shift", "1", 1),
     ("ctrl", "shift", "2", 1.1),
     ("ctrl", "shift", "3", 1.1),
+    ("ctrl", "shift", "4", 0.8),
+    ("ctrl", "shift", "5", 0.5),
+    ("ctrl", "shift", "6", 1.2),
+    ("ctrl", "shift", "7", 0.8),
+    ("ctrl", "shift", "8", 1.2),
+    ("ctrl", "shift", "9", 1),
 ),
 (
     # Chewbacca Angry
@@ -16,6 +22,9 @@ KeyMacroGroupList = [
     ("ctrl", "alt", "1", 1),
     ("ctrl", "alt", "2", 1.1),
     ("ctrl", "alt", "3", 1.6),
+    ("ctrl", "alt", "4", 1.1),
+    ("ctrl", "alt", "5", 1.4),
+    ("ctrl", "alt", "6", 0.5),
 ),
 (
     # Chewbacca Sad
@@ -57,7 +66,7 @@ while endProgram == False:
             break
         
         macroList = [*KeyMacroGroupList[int(userInput)-1]]
-        chooseRandomCombo(macroList, 5, True)
+        chooseRandomCombo(macroList, randint(2, 4), True)
 
     except KeyboardInterrupt:
         endProgram = True
